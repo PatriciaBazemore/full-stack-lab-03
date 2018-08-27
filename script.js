@@ -1,15 +1,12 @@
-var friends=["Katie", "Anna", "Margaret", "Anna", "Ryan"];
+var friends=["Katie", "Astrid", "Margaret", "Anna", "Isis"];
 
 //console.log(friends)
 //console.log(friends(0))
 
 
-
-
 //for (var i = 0; i < friends.length; i++){
   //  console.log(friends[i].toUpperCase()+":");
     /*var friend="friend[i];"*/
-
     //for (var j = 99; j > 0 ; j--) {
       //  var x = j-1; 
         // or just use j-1 in the concatination*
@@ -23,8 +20,6 @@ var friends=["Katie", "Anna", "Margaret", "Anna", "Ryan"];
         //}  else {
           //  console.log(j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, no more lines of code in the file")
         //}
-
-
     //}
 //}
 //var btn = document.createElement("BUTTON");
@@ -36,7 +31,7 @@ var btn =document.getElementById("sing-button");
 
     //btn.addEventListner('click', sing)''
 
-
+//myFriend on David's = friendList on mine
 
 function sing() {
     for (var i = 0; i < friends.length; i++) {
@@ -47,6 +42,7 @@ function sing() {
         div.appendChild(h3);
         var friendList = friends[i];
         h3.innerText = friendList;
+        div.appendChild(h3);   /*new*/
 
 
 
@@ -55,11 +51,11 @@ function sing() {
             var p = document.createElement("p");
 
             if (j > 2) {
-                p.innerText = (j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + x + " lines of code in the file");
+                p.innerText = j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + x + " lines of code in the file";
             } else if (j === 2) {
-                p.innerText = (j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + "one more line of code in the file");
+                p.innerText = j + " lines of code in the file, " + j + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + "one more line of code in the file";
             } else {
-                p.innerText = (j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, no more lines of code in the file");
+                p.innerText = j + " line of code in the file, " + j + " line of code; " + friends[i] + " strikes one out, clears it all out, no more lines of code in the file";
             }
             div.appendChild(p);
         }
@@ -72,7 +68,10 @@ function sing() {
 
 //innerText=
 
-
+//document.addEventListener('DOMContentLoaded', function() {
+//    var btn = document.getElementById('sing-button');
+//    btn.addEventListener('click', sing);
+//}    
 
 
 
